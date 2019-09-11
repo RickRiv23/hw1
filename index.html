@@ -10,10 +10,10 @@
         <nav class="nav-bar">
             <h1 class="title">Javascript</h1>
             <div class="nav-wrapper">
-                <a class="nav-option">Javascript</a>
-                <a class="nav-option">React.Js</a>
-                <a class="nav-option">Vue.Js</a>
-                <a class="nav-option">Angular.Js</a>
+                <a id="js-nav" class="nav-option">Javascript</a>
+                <a id="react-nav"class="nav-option">React.js</a>
+                <a id="vue-nav" class="nav-option">Vue.js</a>
+                <a id="angular-nav" class="nav-option">Angular.js</a>
             </div>
             <a class="source-link" href="https://hackr.io/blog/10-best-javascript-frameworks-2019">Source</a>
         </nav>
@@ -32,7 +32,7 @@
                     <p class="text">
                         React framework, created by Facebook, has gained much popularity in a short amount of time. 
                         It is used to develop and operate the dynamic User Interface of the web pages of some of the worlds most trafficed web pages.
-                        It makes the use of a virtual DOM, and is known for it's modularity and reusability.
+                        It makes the use of a virtual DOM, and is known for its modularity and reusability.
                     </p>
                 </div>
             </div>
@@ -45,7 +45,11 @@
             </div>
             <div id="angular" class="content-wrapper">
                 <div class="text-wrapper">
-                    <p class="text"></p>
+                    <p class="text">
+                        Regarded as one of the most powerful and efficient, and open-source, JavaScript frameworks is Angular. 
+                        This framework is operated by Google, and is essentially used for developing Single Page Applications (SPA). 
+                        It extends the HTML into the application and interprets the attributes.
+                    </p>
                 </div>
             </div>
         </section>
@@ -67,7 +71,11 @@
             </div>
             <div class="content-wrapper">
                 <div class="text-wrapper">
-                    <p class="text"></p>
+                    <p class="text">
+                        Though developed in the year 2016, Vue.js has already made its way into the market and has proven its worth. 
+                        Its dual integration mode is one of the most attractive features for creating high-end Single Page Applications, as well as its modular component-based structure. 
+                        It is much reliable for developing cross-platform.
+                    </p>
                 </div>
             </div>
             <div class="content-wrapper">
@@ -77,4 +85,30 @@
             </div>
         </section>
     </body>
+    <script type="text/javascript">
+        // Created variables for sections vs nav clickables
+        var sectionJS = document.getElementById("js"),
+            sectionReact = document.getElementById("react"),
+            sectionVue = document.getElementById("vue"),
+            sectionAng = document.getElementById("angular");
+        var navJS = document.getElementById("js-nav"),
+            navReact = document.getElementById("react-nav"),
+            navVue = document.getElementById("vue-nav"),
+            navAng = document.getElementById("angular-nav");
+            
+            
+        // Event handlers
+        navJS.addEventListener("click", function(){
+            sectionJS.scrollIntoView({behavior: 'smooth', block:'start'});
+        });
+        navReact.addEventListener("click", function(){
+            sectionReact.scrollIntoView({behavior: 'smooth', block:'start'});
+        });
+        navVue.addEventListener("click", function(){
+            sectionVue.scrollIntoView({behavior: 'smooth', block:'start'});
+        });
+        navAng.addEventListener("click", function(){
+            sectionAng.scrollIntoView({behavior: 'smooth', block:'start'});
+        });
+    </script>
 </html>
