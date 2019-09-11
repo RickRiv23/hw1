@@ -11,7 +11,7 @@
             <h1 class="title">Javascript</h1>
             <div class="nav-wrapper">
                 <a id="js-nav" class="nav-option">Javascript</a>
-                <a id="react-nav"class="nav-option">React.js</a>
+                <a id="react-nav" class="nav-option">React.js</a>
                 <a id="vue-nav" class="nav-option">Vue.js</a>
                 <a id="angular-nav" class="nav-option">Angular.js</a>
             </div>
@@ -23,7 +23,7 @@
             <div id="js" class="content-wrapper">
                 <div class="img-wrapper">
                     <a href="https://hackr.io/blog/10-best-javascript-frameworks-2019">
-                        <img width="100%" src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png">
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" alt="JS">
                     </a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
             <div id="vue" class="content-wrapper">
                 <div class="img-wrapper">
                     <a href="">
-                        <img width="100%" src="https://cdn.worldvectorlogo.com/logos/vue-9.svg">
+                        <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Vue">
                     </a>
                 </div>
             </div>
@@ -66,7 +66,7 @@
             </div>
             <div class="content-wrapper">
                 <div class="img-wrapper">
-                    <img width="100%" src="https://cdn.worldvectorlogo.com/logos/react.svg">
+                    <img src="https://cdn.worldvectorlogo.com/logos/react.svg" alt="React">
                 </div>
             </div>
             <div class="content-wrapper">
@@ -80,35 +80,10 @@
             </div>
             <div class="content-wrapper">
                 <div class="img-wrapper">
-                    <img width="100%" src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg">
+                    <img src="https://cdn.worldvectorlogo.com/logos/angular-icon.svg" alt="Angular">
                 </div>
             </div>
         </section>
+        <script type="text/javascript" src="assets/assets.js"></script>
     </body>
-    <script type="text/javascript">
-        // Created variables for sections vs nav clickables
-        var sectionJS = document.getElementById("js"),
-            sectionReact = document.getElementById("react"),
-            sectionVue = document.getElementById("vue"),
-            sectionAng = document.getElementById("angular");
-        var navJS = document.getElementById("js-nav"),
-            navReact = document.getElementById("react-nav"),
-            navVue = document.getElementById("vue-nav"),
-            navAng = document.getElementById("angular-nav");
-            
-            
-        // Event handlers
-        navJS.addEventListener("click", function(){
-            sectionJS.scrollIntoView({behavior: 'smooth', block:'start'});
-        });
-        navReact.addEventListener("click", function(){
-            sectionReact.scrollIntoView({behavior: 'smooth', block:'start'});
-        });
-        navVue.addEventListener("click", function(){
-            sectionVue.scrollIntoView({behavior: 'smooth', block:'start'});
-        });
-        navAng.addEventListener("click", function(){
-            sectionAng.scrollIntoView({behavior: 'smooth', block:'start'});
-        });
-    </script>
 </html>

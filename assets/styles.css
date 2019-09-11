@@ -13,6 +13,9 @@ body{
 li{
     list-style: none;
 }
+img{
+    width: 100%;
+}
 .source-link,a{
     text-decoration: none;
     color: white;
